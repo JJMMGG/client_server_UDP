@@ -18,7 +18,7 @@ data = f.read(buf)
 while(data):
     if(sock.sendto(data, (UDP_IP, UDP_PORT))):
         data = f.read(buf)
-        time.sleep(0.02) # Give receiver a bit time to save
+        #time.sleep(0.02) # Give receiver a bit time to save
 
 sock.close()
 f.close()

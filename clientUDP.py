@@ -11,8 +11,8 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sock.bind((UDP_IP, IN_PORT))
 
 while True:
+    #time.sleep(0.5)
     data, addr = sock.recvfrom(1024)
-    time.sleep(10.5)
     if data:
         print "File name:", data
         file_name = data.strip()
